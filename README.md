@@ -5,10 +5,13 @@ and comes with a very minimal shell for building an app.
 
 ### Running this example
 
+
+
 To reproduce, with XCode on your Mac, and your iPhone tethered:
 
 ```bash
 npm install
+// npm run start //should open a browser, but we want to run in ios app:
 npm run build
 npx cap sync
 npx cap open ios
