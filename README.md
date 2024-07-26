@@ -30,6 +30,7 @@ npx cap open ios
 ```
 Stop and restart the app.
 
-Portrait now seems ok, but landscape is broken.
+Portrait now seems ok at first sight, but landscape is visibly broken.
 
 It appears that the nav and main.responsive margins are not relative to the body.
+
