@@ -9,7 +9,8 @@ To reproduce in Safari:
 
 ```bash
 npm install
-npm run start //will start vite and open a browser
+npm run start // will start vite. 
+Open browser at http://localhost:3000
 ```
 
 Changes in src/index.html will be automatically reflected in browser.
