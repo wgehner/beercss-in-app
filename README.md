@@ -5,25 +5,29 @@ and comes with a very minimal shell for building an app.
 
 ### Running this example
 
-
-
-To reproduce, with XCode on your Mac, and your iPhone tethered:
+To reproduce in Safari:
 
 ```bash
 npm install
-// npm run start //should open a browser, but we want to run in ios app:
+npm run start //will start vite and open a browser
+```
+
+Changes in src/index.html will be automatically reflected in browser.
+
+To reproduce on iPhone, with XCode on your Mac, and your iPhone tethered:
+
+```bash
+npm install
 npm run build
 npx cap sync
 npx cap open ios
 
 ```
-In XCode, run on your Iphone. Bleeding into safe area. Rotate. Same.
-
-This is what WebKit WebView does, but behavior can be changed with --safe-area-inset-[top...]
+In XCode, run on your Iphone. Drag the slider up or down, and you will see it moves erratically.
 
 The rendered html is at src/index.html
 
-Uncomment the meta viewport and style in src/index.html. To redeploy:
+After changes in src/index.html, redeploy with:
 
 ```bash
 npm run build
@@ -33,7 +37,5 @@ npx cap open ios
 ```
 Stop and restart the app.
 
-Portrait now seems ok at first sight, but landscape is visibly broken.
 
-It appears that the nav and main.responsive margins are not relative to the body.
 
